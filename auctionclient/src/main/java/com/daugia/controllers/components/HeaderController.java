@@ -26,13 +26,20 @@ import javafx.util.Duration;
 
 public class HeaderController {
 
-    @FXML private Label taiSanLabel;
-    @FXML private Label phienDauGiaLabel;
-    @FXML private Label gioiThieuLabel;
-    @FXML private Label lienHeLabel;
-    @FXML private Label timeLabel;
-    @FXML private Label dateLabel;
-    @FXML private TextField searchField;
+    @FXML
+    private Label taiSanLabel;
+    @FXML
+    private Label phienDauGiaLabel;
+    @FXML
+    private Label gioiThieuLabel;
+    @FXML
+    private Label lienHeLabel;
+    @FXML
+    private Label timeLabel;
+    @FXML
+    private Label dateLabel;
+    @FXML
+    private TextField searchField;
 
     @FXML
     public void initialize() {
@@ -73,6 +80,7 @@ public class HeaderController {
             BorderPane mainBorderPane = (BorderPane) taiSanLabel.getScene().getRoot();
             mainBorderPane.setCenter(content);
         } catch (IOException e) {
+            System.out.println("huhu");
             e.printStackTrace();
         }
     }
@@ -103,7 +111,7 @@ public class HeaderController {
         MenuItem sapdaugia = new MenuItem("Phiên đấu giá sắp đấu giá");
         sapdaugia.setOnAction(e -> loadCenterContent("/view/SapDauGiaView.fxml"));
 
-        MenuItem  dangdienra = new MenuItem("Phiên đấu giá đang diễn ra");
+        MenuItem dangdienra = new MenuItem("Phiên đấu giá đang diễn ra");
         dangdienra.setOnAction(e -> loadCenterContent("/view/DangDienRaView.fxml"));
 
         MenuItem daketthuc = new MenuItem("Phiên đấu giá đã kết thúc");
@@ -123,6 +131,7 @@ public class HeaderController {
     private void showLienHe(MouseEvent event) {
         loadCenterContent("/views/common/LienHeView.fxml");
     }
+
     @FXML
     public void goToLoginClick(MouseEvent event) {
         try {

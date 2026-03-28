@@ -1,0 +1,31 @@
+VBox #title {
+    font-size: 32px;
+    -fx-font-size: 32px;
+
+    font-weight: bold;
+    -fx-font-weight: bold;
+
+    color: #c8102e;
+    -fx-text-fill: #c8102e;
+}
+
+VBox > HBox {
+    -fx-alignment: center-left;
+    max-width: 1000px;
+    -fx-max-width: 1000px;
+
+    -fx-spacing: 50px;
+}
+
+HBox HBox {
+    -fx-alignment: center;
+    min-width: 300px;
+    -fx-min-width: 300px;
+
+    -fx-spacing: 20px;
+}
+
+FontAwesomeIconView {
+    fill: #c8102e;
+    -fx-fill: #c8102e;
+}

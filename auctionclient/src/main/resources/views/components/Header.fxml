@@ -10,9 +10,9 @@
 
     <HBox alignment="CENTER_LEFT" spacing="25" HBox.hgrow="ALWAYS">   
        <Label fx:id="taiSanLabel" onMouseClicked="#showTaiSanMenu" prefHeight="38.0" prefWidth="158.0" styleClass="menu-item" text="Tài sản đấu giá" style="-fx-cursor: hand;"/>
-       <Label fx:id="phiendaugiaLabel" onMouseClicked="#showPhienDauGiaMenu" prefHeight="38.0" prefWidth="158.0" styleClass="menu-item" text="Phiên đấu giá" style="-fx-cursor: hand;"/>
-       <Label fx:id="gioithieuLabel" onMouseClicked="#showGioiThieu" prefHeight="38.0" prefWidth="158.0" styleClass="menu-item" text="Giới thiệu" style="-fx-cursor: hand;"/>
-       <Label fx:id="lienheLabel" onMouseClicked="#showLienHe" prefHeight="38.0" prefWidth="158.0" styleClass="menu-item" text="Liên Hệ" style="-fx-cursor: hand;"/>
+       <Label fx:id="phienDauGiaLabel" onMouseClicked="#showPhienDauGiaMenu" prefHeight="38.0" prefWidth="158.0" styleClass="menu-item" text="Phiên đấu giá" style="-fx-cursor: hand;"/>
+       <Label fx:id="gioiThieuLabel" onMouseClicked="#showGioiThieu" prefHeight="38.0" prefWidth="158.0" styleClass="menu-item" text="Giới thiệu" style="-fx-cursor: hand;"/>
+       <Label fx:id="lienHeLabel" onMouseClicked="#showLienHe" prefHeight="38.0" prefWidth="158.0" styleClass="menu-item" text="Liên Hệ" style="-fx-cursor: hand;"/>
     </HBox>
 
     <HBox alignment="CENTER_RIGHT" spacing="30">

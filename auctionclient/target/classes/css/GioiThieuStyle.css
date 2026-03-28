@@ -1,0 +1,22 @@
+ScrollPane VBox {
+    -fx-alignment: center;
+}
+
+VBox .label {
+    -fx-alignment: center;
+    max-width: 1000px;
+    -fx-max-width: 1000px;
+    font-size: 16px;
+    -fx-font-size: 16px;
+    text-wrap: wrap;
+    -fx-wrap-text: true;
+}
+
+VBox #title {
+    font-size: 32px;
+    -fx-font-size: 32px;
+    color: #c8102e;
+    -fx-text-fill: #c8102e;
+    font-weight: bold;
+    -fx-font-weight: bold;
+}

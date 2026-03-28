@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane prefWidth="1200" prefHeight="700" 
-            xmlns="http://javafx.com/javafx/25" 
-            xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.daugia.controllers.common.GioiThieuController">
+<BorderPane prefHeight="700" prefWidth="1200" stylesheets="@../../css/GioiThieuStyle.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.daugia.controllers.common.GioiThieuController">
 
     <center>
-        <VBox alignment="CENTER" spacing="30" style="-fx-padding: 80 40;">
-            <Label fx:id="titleLabel" 
-                   style="-fx-font-size: 42px; -fx-font-weight: bold; -fx-text-fill: #c8102e;"/>
-            
-            <Label text="Nền tảng Đấu Giá trực tuyến uy tín tại Việt Nam" 
-                   style="-fx-font-size: 20px; -fx-text-fill: #555;"/>
-            
-            <Label text="Với sứ mệnh mang đến sự minh bạch và công bằng trong mọi phiên đấu giá." 
-                   style="-fx-font-size: 16px; -fx-text-alignment: CENTER; -fx-max-width: 800; -fx-wrap-text: true;"/>
-        </VBox>
+        <ScrollPane fitToWidth="true" style="-fx-background-color: transparent; -fx-border-color: transparent;" vbarPolicy="AS_NEEDED">
+            <content>
+                <VBox alignment="CENTER" spacing="20" style="-fx-padding: 40;">
+                  <children>
+                     <Label fx:id="title" text="GIỚI THIỆU" />
+                     <Label text="Thời đại công nghệ số đã mở ra xu thế phát triển tất yếu của dịch vụ &quot;Bán đấu giá&quot;, &lt;tên app&gt; đã được hình thành. Với đội ngũ phát triển trẻ trung, năng động, dày dặn kinh nghiệm, &lt;tên app&gt; được xây dựng dựa trên tinh thần &quot;đem hiệu quả kinh tế làm mục tiêu&quot;" />
+                     <Label text="Chúng tôi tin rằng mỗi món đồ đều có một câu chuyện riêng, một giá trị riêng chờ khám phá. &lt;tên app&gt; hướng tới sứ mệnh xóa bỏ mọi rào cản giữa người bán và người mua, dựa trên vai trò là cầu nối tin cậy ấy, &lt;tên app&gt; mang đến một sàn đấu giá trực tuyến minh bạch, công bằng và đầy kịch tính." />
+                     <Label text="Hệ thống quan lý thông minh cùng độ ngũ CSKH luôn hỗ trợ tận tâm giúp mọi giao dịch trở nên dễ dàng hơn bao giờ hết. Cùng với đó là hệ thống đấu gia theo thời gian thực và quy trình kiểm duyệt nghiêm ngặt, chúng tôi cam kết đảm bảo quyển lợi tối đa cho người dùng. Tai đây, bạn không chỉ mua sắm, mà bạn còn đang tham gia vào một cuộc săn tìm những giá trị độc bản" />
+                     <Label text="Với tầm nhìn &quot;Trở thành sàn đấu giá trực tuyến số 1 tại Việt Nam&quot;, &lt;tên app&gt; tự hào là một trong những đơn vị tiên phong đi đầu về chuyển đổi số trong lĩnh vực đấu giá, tạo ra trải nghiệm đấu giá thuận tiện, đơn giản, thành công và đầy cảm hứng." />
+                     <Label text="Khám phá những sản phẩm hiếm có, tham gia vào những phiên đấu giá sôi động và sở hữu những món đồ yêu thích với mức giá do chính bạn quyết định. Sự hài lòng và niềm tin của cộng đồng là kim chỉ nam cho mọi hoạt động của chúng tôi." />
+                  </children>
+                </VBox>
+            </content>
+        </ScrollPane>
     </center>
 </BorderPane>
